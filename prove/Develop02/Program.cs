@@ -2,6 +2,11 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 
+// Notes: 
+// I implemented the function to avoid repeated prompts in option 1 - Write. 
+// I did this in the PromptGenerator class with the help of some internet links on StarkFlow forum and from a 
+// friend who already studied C# and knew the language.
+
 class Program
 {
     static void Main(string[] args)
