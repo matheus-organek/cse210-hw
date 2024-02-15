@@ -1,0 +1,157 @@
+Final Project Design – Foundation
+
+Foundation 1:
+•	Video Class:
+    o	Member variables:
+        >	_title : string
+        >	_author : string
+        >	_lenght : int
+        >	_comments : List<Comment>
+    o	Methods:
+        >	Video()
+        >	AddComment() : void
+        >	NumberOfComments() : int
+        >	ListOfComments() : string
+        >	DisplayVideoInfo() : void
+
+•	Comment Class:
+    o	Member variables:
+        >	_name : string
+        >	_text : string
+    o	Methods:
+        >	Comment()
+In this case, the Video class uses the innovative logic of the Comment class to create a comment.
+
+
+
+Foundation 2:
+•	Product Class:
+    o	Member variables:
+        	_name : string
+        	_productId : string
+        	_price : double
+        	_quantity : int
+    o	Methods:
+        	Product(name : string, productId : string, price : int, quantity : int)
+        	TotalProductCost() : double
+
+•	Customer Class:
+    o	Member variables:
+        	_name : string
+        	_address : Address
+    o	Methods:
+        	Customer(name : string, address : Address)
+        	LiveInUsa() : bool
+
+•	Address Class:
+    o	Member variables:
+        	_streetAddress : string
+        	_city : string
+        	_state : string
+        	_country: string
+    o	Methods:
+        	Address(streetAddress : string, city : string, state : string, country : string)
+        	IsInUsa() : bool
+        	DisplayAddress() : string
+
+•	Order Class:
+    o	Member variables:
+        	_products: List<Product>
+        	_customer : Customer
+    o	Methods:
+        	Order(customer : Customer)
+        	AddProduct(product : Product)
+        	TotalOrderCost() : double
+        	PackingLabel() : string
+        	ShippingLabel() : string
+In the second project, each class has its own implementation with its member variables defined as private. As you can see, some classes use methods from others and for this it will be necessary to create getters and seatters so that the variables can be changed, but this will be done locally, as the member variables will continue to be defined as private.
+
+
+
+Foundation 3:
+•	Event Class:
+    o	Member variables:
+        	_title : string
+        	_description : string
+        	_date : string
+        	_time : string
+        	_type : string
+        	_address : Address
+    o	Methods:
+        	Event(title : string, description : string, date : string, time : string, type : string, address : Address)
+        	StandardDetails() : string
+        	ShortDescription() : string
+
+•	Lecture Class:
+    o	Member variables:
+        	_speaker : string
+        	_capacity : int
+    o	Methods:
+        	Lecture(string speaker, string capacity)
+        	FullDetails() : string
+
+•	Reception Class:
+    o	Member variables:
+        	_email : string
+    o	Methods:
+        	Reception(string email)
+        	FullDetails() : string
+
+•	Outdoor Class:
+    o	Member variables:
+        	_weatherStatement : string
+    o	Methods:
+        	Outdoor(string weatherStatement)
+        	FullDetails() : string
+
+•	Address Class:
+    o	Member variables:
+        	_streetAddress : string
+        	_city : string
+        	_state : string
+        	_country: string
+    o	Methods:
+        	Address(streetAddress : string, city : string, state : string, country : string)
+        	DisplayAddress() : string
+Here the issue of inheritance is addressed, in which common attributes and behaviors are defined in a base class, in this case the Event class, while derived classes can inherit what was implemented in the base class for their own implementation. And as needed, custom behaviors and attributes are assigned to each derived class.
+
+
+
+Foundation 4:
+•	Activity Class:
+    o	Member variables:
+        	_duration : int
+    o	Methods:
+        	Activity()
+        	GetDistance() : double
+        	GetSpeed() : double
+        	GetPace() : double
+        	GetSummary() : string
+
+•	Running Class:
+    o	Member variables:
+        	_distance : double
+    o	Methods:
+        	Running()
+        	GetDistance() : double
+        	GetSpeed() : double
+        	GetPace() : double
+        	GetSummary() : string
+
+•	Bicycle Class:
+    o	Member variables:
+        	_speed : double
+    o	Methods:
+        	Bicycle()
+        	GetSpeed() : double
+        	GetSummary() : string
+
+•	Swimming Class:
+    o	Member variables:
+        	_distance : double
+        	_laps : int
+    o	Methods:
+        	Swimming()
+        	GetDistance() : double
+        	GetSummary() : string
+Similar to inheritance, the same thing happens here too, but the methods will be changed according to the needs of each class. Common roles and behaviors are defined in the Activity base class, while derived classes inherit and modify according to unique needs and specifics.
