@@ -30,7 +30,7 @@ public class Customer
         set { _name = value; }
     }
 
-    // Getters and setters for the _description variable.
+    // Getters and setters for the _address variable.
     public Address Address
     {
         get { return _address; }

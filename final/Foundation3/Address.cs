@@ -18,7 +18,7 @@ public class Address
     public string DisplayAddress()
     {
         // Concatenate address fields into a formatted string.
-        string addressString = $"Street: {_streetAddress} \nCity: {_city} \nState: {_state} \nCountry: {_country}";
+        string addressString = $"{_streetAddress}, {_city}, {_state}, {_country}";
         return addressString; // Return the formatted address string.
     }
 }
